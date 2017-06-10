@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: review-preview
+spec:
+  selector:
+    app: review-preview
+  ports:
+    - protocol: TCP
+      port: 80
