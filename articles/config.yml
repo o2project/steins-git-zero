@@ -1,0 +1,38 @@
+review_version: 2.0
+debug: null
+
+language: ja
+bookname: steins-git-0
+booktitle: Steins;Git 0
+urnid: urn:uid:https://steins-git-0.o2p.jp/
+
+aut: O2 Project
+edt: kubosho_
+
+date: 2017-08-11
+history: [["2017-08-11"]]
+rights: (C) 2017 O2 Project
+
+docroot: "book"
+stylesheet: ["style.css"]
+
+epubversion: 3
+htmlversion: 5
+
+toc: true
+toclevel: 2
+secnolevel: 2
+
+colophon: true
+
+page_metric: B5
+
+epubmaker:
+  htmlext: xhtml
+  cover_linear: yes
+
+texstyle: techbooster-doujin
+texdocumentclass: ["jsbook", "b5j,uplatex,twoside,openany"]
+
+pdfmaker:
+  colophon: true
