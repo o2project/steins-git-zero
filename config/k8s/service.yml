@@ -4,7 +4,7 @@ metadata:
   name: review-preview
 spec:
   selector:
-    app: review-preview
+    name: review-preview
   ports:
     - protocol: TCP
       port: 80
