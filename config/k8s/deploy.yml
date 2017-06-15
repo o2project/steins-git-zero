@@ -8,7 +8,7 @@ spec:
   template:
     metadata:
       labels:
-        app: review-preview
+        name: review-preview
     spec:
       containers:
       - name: review-preview
