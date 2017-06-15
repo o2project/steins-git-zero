@@ -2,7 +2,6 @@ machine:
   environment:
     PROJECT_NAME: review-preview
     CLUSTER_NAME: review-preview-cluster
-    IMAGE_NAME: vvakame/review
     CLOUDSDK_COMPUTE_ZONE: asia-east1-a
     DEBIAN_FRONTEND: noninteractive
   services:
@@ -16,17 +15,3 @@ dependencies:
     - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file ${HOME}/gcloud.json
     - sudo /opt/google-cloud-sdk/bin/gcloud config set project $PROJECT_NAME
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet config set container/cluster $CLUSTER_NAME
-
-test:
-  post:
-    - docker run --rm -v `pwd`/articles:/articles $IMAGE_NAME /bin/sh -c "cd /articles && review-pdfmaker config.yml"
-
-deployment:
-  prod:
-    branch: master
-    commands:
-      - ./deploy.sh
-  feature:
-    branch: /feature-.*/
-    commands:
-      - ./deploy.sh
