@@ -15,3 +15,23 @@ dependencies:
     - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file ${HOME}/gcloud.json
     - sudo /opt/google-cloud-sdk/bin/gcloud config set project $PROJECT_NAME
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet config set container/cluster $CLUSTER_NAME
+
+deployment:
+  prod:
+    branch: master
+    commands:
+      - docker run --rm -v `pwd`/articles:/sg0 \
+        gcr.io/review-preview/review-preview \
+        /bin/sh -c \
+        "cd /sg0 && \
+        review-webmaker config.yml && \
+        cp --parents /sg0/*.* /usr/share/nginx/html/"
+  feature:
+    branch: /feature-.*/
+    commands:
+      - docker run --rm -v `pwd`/articles:/sg0/${CIRCLE_BRANCH} \
+        gcr.io/review-preview/review-preview \
+        /bin/sh -c \
+        "cd /sg0/${CIRCLE_BRANCH} && \
+        review-webmaker config.yml && \
+        cp --parents /sg0/${CIRCLE_BRANCH}/*.* /usr/share/nginx/html/"

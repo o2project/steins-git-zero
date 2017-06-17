@@ -16,10 +16,5 @@ RUN apt-get install -y --no-install-recommends \
 RUN curl -L https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/index.rubygems.org/GlobalSignRootCA.pem > /usr/lib/ruby/2.3.0/rubygems/ssl_certs/GlobalSignRootCA.pem
 RUN gem install review review-peg bundler rake --no-rdoc --no-ri
 
-# Execute Re:VIEW for Web
-COPY articles/ .
-RUN review-webmaker config.yml
-
-# Publication for Web
-RUN cp steins-git-0/*.* /usr/share/nginx/html/
+# setup Nginx
 COPY config/nginx/nginx.conf /etc/nginx/conf.d/review-preview.conf

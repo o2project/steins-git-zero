@@ -1,8 +1,7 @@
 node_modules/
 vendor/
 .bundle/
-articles/webroot/
-articles/book/
+articles/sg0/
 redpen-distribution-*/
 temp/
 
