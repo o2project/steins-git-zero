@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM ubuntu:latest
 MAINTAINER kubosho
 
 # setup
