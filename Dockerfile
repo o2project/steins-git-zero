@@ -16,5 +16,9 @@ RUN apt-get install -y --no-install-recommends \
 RUN curl -L https://raw.githubusercontent.com/rubygems/rubygems/master/lib/rubygems/ssl_certs/index.rubygems.org/GlobalSignRootCA.pem > /usr/lib/ruby/2.3.0/rubygems/ssl_certs/GlobalSignRootCA.pem
 RUN gem install review review-peg bundler rake --no-rdoc --no-ri
 
-# setup Nginx
-COPY config/nginx/nginx.conf /etc/nginx/conf.d/review-preview.conf
+# install RedPen
+RUN apt-get install -y --no-install-recommends openjdk-8-jdk jq
+COPY bin/setup-redpen.sh /tmp
+RUN chmod +x /tmp/setup-redpen.sh && \
+    ./tmp/setup-redpen.sh && \
+    ln -s /redpen-distribution-*/bin/redpen /usr/local/bin/redpen

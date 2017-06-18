@@ -2,6 +2,7 @@ machine:
   environment:
     PROJECT_NAME: review-preview
     CLUSTER_NAME: review-preview-cluster
+    IMAGE_NAME: gcr.io/review-preview/review-preview
     CLOUDSDK_COMPUTE_ZONE: asia-east1-a
     DEBIAN_FRONTEND: noninteractive
   services:
@@ -15,6 +16,11 @@ dependencies:
     - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file ${HOME}/gcloud.json
     - sudo /opt/google-cloud-sdk/bin/gcloud config set project $PROJECT_NAME
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet config set container/cluster $CLUSTER_NAME
+
+test:
+  override:
+    - docker run --rm -v `pwd`:/work gcr.io/review-preview/review-preview \
+      /bin/sh -c "/usr/local/bin/redpen -c /work/redpen-conf-ja.xml /work/articles/*.re"
 
 deployment:
   prod:
