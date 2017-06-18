@@ -8,10 +8,10 @@ spec:
   template:
     metadata:
       labels:
-        app: review-preview
+        name: review-preview
     spec:
       containers:
       - name: review-preview
-        image: vvakame/review:latest
+        image: gcr.io/review-preview/review-preview:latest
         ports:
         - containerPort: 80
