@@ -16,6 +16,7 @@ dependencies:
     - sudo /opt/google-cloud-sdk/bin/gcloud auth activate-service-account --key-file ${HOME}/gcloud.json
     - sudo /opt/google-cloud-sdk/bin/gcloud config set project $PROJECT_NAME
     - sudo /opt/google-cloud-sdk/bin/gcloud --quiet config set container/cluster $CLUSTER_NAME
+    - docker build -t gcr.io/review-preview/review-preview .
 
 test:
   override:
