@@ -11,12 +11,12 @@ dependencies:
 
 test:
   override:
-    - docker run --rm -v `pwd`:${WORK_DIR} ${IMAGE_NAME} \
+    - docker run -v `pwd`:${WORK_DIR} ${IMAGE_NAME} \
       /bin/sh -c "/usr/local/bin/redpen -c ${WORK_DIR}/redpen-conf-ja.xml ${WORK_DIR}/articles/*.re"
 
 deployment:
   prod:
     branch: master
     commands:
-      - docker run --rm -v `pwd`/articles:${WORK_DIR} ${IMAGE_NAME} \
+      - docker run -v `pwd`/articles:${WORK_DIR} ${IMAGE_NAME} \
         /bin/sh -c cd ${WORK_DIR} && review-webmaker config.yml"
