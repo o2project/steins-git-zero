@@ -31,4 +31,4 @@ jobs:
             - /caches/app.tar
       - run:
           name: Run test for RedPen
-          command: docker run -a stdout -v `pwd`:/work app /bin/sh -c "/usr/local/bin/redpen -c /work/redpen-conf-ja.xml /work/articles/*.re"
+          command: docker run -v /work:/work app /bin/sh -c "/usr/local/bin/redpen -c /work/redpen-conf-ja.xml /work/articles/*.re"
