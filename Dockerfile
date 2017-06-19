@@ -18,5 +18,6 @@ RUN gem install review review-peg bundler rake --no-rdoc --no-ri
 RUN apt-get install -y --no-install-recommends openjdk-8-jdk jq
 COPY bin/setup-redpen.sh /tmp
 RUN chmod +x /tmp/setup-redpen.sh && \
+    sync && \
     ./tmp/setup-redpen.sh && \
     ln -s /redpen-distribution-*/bin/redpen /usr/local/bin/redpen
