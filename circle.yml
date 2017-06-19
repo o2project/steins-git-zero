@@ -11,7 +11,7 @@ dependencies:
 
 test:
   override:
-    - docker run -v `pwd`:${WORK_DIR} ${IMAGE_NAME} /bin/sh -c "/usr/local/bin/redpen -c ${WORK_DIR}/redpen-conf-ja.xml ${WORK_DIR}/articles/*.re"
+    - docker run -a stdout -v `pwd`:${WORK_DIR} ${IMAGE_NAME} /bin/sh -c "/usr/local/bin/redpen -c ${WORK_DIR}/redpen-conf-ja.xml ${WORK_DIR}/articles/*.re"; echo $?
 
 deployment:
   prod:
