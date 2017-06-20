@@ -42,4 +42,4 @@ jobs:
           command: |
             docker create -v /work --name review-preview app /bin/sh
             docker cp . review-preview:/work
-            docker run --volumes-from review-preview app /bin/sh -c "/usr/local/bin/redpen -c /work/redpen-conf-ja.xml /work/articles/*.re"
+            docker run -a stdout --volumes-from review-preview app /bin/sh -c "/usr/local/bin/redpen -c /work/redpen-conf-ja.xml -l 0 /work/articles/*.re"
