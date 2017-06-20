@@ -2,11 +2,19 @@ version: 2
 jobs:
   build:
     docker:
-      - image: docker:17.05.0-ce-git
+      - image: golang:latest
     working_directory: /work
     steps:
       - checkout
       - setup_remote_docker
+      - run:
+          name: Install Docker client
+          command: |
+            set -x
+            VER="17.05.0-ce"
+            curl -L -o /tmp/docker-$VER.tgz https://get.docker.com/builds/Linux/x86_64/docker-$VER.tgz
+            tar -xz -C /tmp -f /tmp/docker-$VER.tgz
+            mv /tmp/docker/* /usr/bin
       - restore_cache:
           keys:
             - v1-{{ .Branch }}
@@ -31,4 +39,7 @@ jobs:
             - /caches/app.tar
       - run:
           name: Run test for RedPen
-          command: docker run -v /work:/work app /bin/sh -c "/usr/local/bin/redpen -c /work/redpen-conf-ja.xml /work/articles/*.re"
+          command: |
+            docker create -v /work --name review-preview app /bin/sh
+            docker cp . review-preview:/work
+            docker run -a stdout --volumes-from review-preview app /bin/sh -c "/usr/local/bin/redpen -c /work/redpen-conf-ja.xml -l 0 /work/articles/*.re"
