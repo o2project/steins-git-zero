@@ -18,18 +18,6 @@ RUN gem install review review-peg bundler rake --no-rdoc --no-ri
 RUN apt-get install -y --no-install-recommends openjdk-8-jdk jq
 COPY bin/setup-redpen.sh /tmp
 RUN chmod +x /tmp/setup-redpen.sh && \
+    sync && \
     ./tmp/setup-redpen.sh && \
     ln -s /redpen-distribution-*/bin/redpen /usr/local/bin/redpen
-
-# install Nginx
-RUN curl http://nginx.org/keys/nginx_signing.key | apt-key add - && \
-    sh -c "echo 'deb http://nginx.org/packages/ubuntu/ trusty nginx' >> /etc/apt/sources.list" && \
-    sh -c "echo 'deb-src http://nginx.org/packages/ubuntu/ trusty nginx' >> /etc/apt/sources.list" && \
-    apt-get update && \
-    apt-get install -y nginx
-
-# setup Nginx
-COPY config/nginx/nginx.conf /etc/nginx/conf.d/review-preview.conf
-EXPOSE 80
-STOPSIGNAL SIGTERM
-CMD ["nginx", "-g", "daemon off;"]
