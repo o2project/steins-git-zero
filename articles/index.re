@@ -2,7 +2,10 @@
 
 本書は「Gitのコマンドを通じてSteins;Gate（0）を説明する」ことを目的にして執筆しました。
 対象読者は特に想定していません。もはや誰得なんだろう…という内容のためです。
-また本書の構成上Steins;GateやSteins;Gate 0のネタバレが多く含まれています。
+また本書の構成上Steins;GateやSteins;Gate 0の核心に触れるネタバレが含まれています。
+
+そのためGitでSteins;GateやSteins;Gate 0を解説する本ですが、Steins;GateやSteins;Gate 0を未プレイの方は読むことをあまりおすすめしません。
+まだ未プレイという人は先にSteins;Gate 0をやってください。またSteins;Gateもやっていない人はSteins;Gateのストーリーを全てクリアしてからSteins;Gate0をやることをおすすめします。
 
 == 本書の構成
 
