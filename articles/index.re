@@ -5,7 +5,9 @@
 また本書の構成上Steins;GateやSteins;Gate 0の核心に触れるネタバレが含まれています。
 
 そのためGitでSteins;GateやSteins;Gate 0を解説する本ですが、Steins;GateやSteins;Gate 0を未プレイの方は読むことをあまりおすすめしません。
-まだ未プレイという人は先にSteins;Gate 0をやってください。またSteins;Gateもやっていない人はSteins;Gateのストーリーを全てクリアしてからSteins;Gate0をやることをおすすめします。
+まだ未プレイという人は先にSteins;Gate 0をやってください。Steins;Gateをやっていない人はSteins;Gateのストーリーを全てクリアしてからSteins;Gate 0をやることをおすすめします。
+
+なおこの本で扱うSteins;Gateのストーリーは説明のために一部改変しています。そこはご了承の上読み進めてください。
 
 == 本書の構成
 
