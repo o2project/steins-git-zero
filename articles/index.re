@@ -1,12 +1,11 @@
 = はじめに
 
 本書は「GitでSteins;Gateを説明する」ことを目的にして執筆しました。
-GitでSteins;GateやSteins;Gate 0を解説する本ですが、Steins;GateやSteins;Gate 0を未プレイの方は読むことをあまりおすすめしません。
+
+本書の構成上Steins;GateやSteins;Gate 0、Steins;Gate 負荷領域のデジャブの核心に触れるネタバレが含まれています。読む際はご注意ください。
 まだ未プレイという人は先にSteins;Gate 0をやってください。Steins;Gateをやっていない人はSteins;Gateのストーリーを全てクリアしてからSteins;Gate 0をやることをおすすめします。
 
 対象読者は特に想定していません。もはや誰得なんだろう…という内容のためです。
-本書の構成上Steins;GateやSteins;Gate 0の核心に触れるネタバレが含まれています。読む際はご注意ください。
-
 またGitの説明は筆者が普段使っているコマンドベースでおこなっています。
 
 == お問い合わせ先
