@@ -119,6 +119,13 @@ GitHubのイシューは現在のリポジトリにある問題点や改善し�
 またソフトウェアを象徴するロゴをどうするかなどの議論も時々おこなわれます。
 さながら岡部倫太郎たちが時間を遡って送れるメールをDメールと名付けた円卓会議に似ています。
 
+== Pages
+
+GitHubのページは未来ガジェット研究所のwebページです。
+リポジトリのmasterブランチ上に@<code>{docs}というディレクトリを作ってその中にHTMLを置くか、gh-pagesブランチ上にHTMLを置くことでwebページを公開できます。
+また未来ガジェット研究所のページ@<fn>{future-gadget-lab}みたいにドメインを自由に設定できます。
+//footnote[future-gadget-lab][http://futuregadget-lab.com/]
+
 == Projects
 
 GitHubのプロジェクトはオペレーションです。
