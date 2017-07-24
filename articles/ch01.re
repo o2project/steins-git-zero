@@ -126,6 +126,12 @@ GitHubのページは未来ガジェット研究所のwebページです。
 また未来ガジェット研究所のページ@<fn>{future-gadget-lab}みたいにドメインを自由に設定できます。
 //footnote[future-gadget-lab][http://futuregadget-lab.com/]
 
+== Wiki
+
+GitHubのウィキは未来ガジェット研究所に置かれたホワイトボードです。
+牧瀬紅莉栖がラボメンに対しタイムリープ理論を説明したときにホワイトボードを使いました。
+GitHubのWikiもそのリポジトリの説明ややることを書けます。
+
 == Projects
 
 GitHubのプロジェクトはオペレーションです。
