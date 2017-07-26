@@ -25,7 +25,7 @@ secnolevel: 2
 
 colophon: true
 
-page_metric: B5
+page_metric: A5
 
 epubmaker:
   htmlext: xhtml
