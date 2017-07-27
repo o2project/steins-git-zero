@@ -31,8 +31,8 @@ epubmaker:
   htmlext: xhtml
   cover_linear: yes
 
-texstyle: techbooster-doujin
-texdocumentclass: ["jsbook", "b5paper,b5j,uplatex,openany,twoside"]
+texstyle: techbooster-doujin-a5
+texdocumentclass: ["jsbook", "a5j,uplatex,twoside,openany"]
 
 pdfmaker:
   colophon: true
