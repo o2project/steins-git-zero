@@ -10,7 +10,7 @@ aut: O2 Project
 edt: kubosho_
 
 date: 2017-08-11
-history: [["2017-08-11"]]
+history: [["2017-08-11 C92版 v1.0.0"]]
 rights: (C) 2017 O2 Project
 
 docroot: "sg0"
@@ -23,16 +23,16 @@ toc: true
 toclevel: 2
 secnolevel: 2
 
+titlepage: true
 colophon: true
-
-page_metric: A5
+direction: "ltr"
 
 epubmaker:
   htmlext: xhtml
   cover_linear: yes
 
 texstyle: techbooster-doujin
-texdocumentclass: ["jsbook", "b5j,uplatex,twoside,openany"]
+texdocumentclass: ["jsbook", "b5paper,b5j,uplatex,openany,twoside"]
 
 pdfmaker:
   colophon: true
