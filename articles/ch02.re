@@ -1,11 +1,41 @@
-= 参考資料
+= GitHubでSteins;Gateを解説する
 
- * @<href>{https://git-scm.com/docs, Git - Reference}
- * @<href>{https://www.kaitoy.xyz/2016/10/08/git-checkout/, git checkoutを図解する | To Be Decided}
- * @<href>{https://help.github.com/articles/about-project-boards/, About project boards - User Documentation}
- * @<href>{https://help.github.com/articles/about-pull-requests/, About pull requests - User Documentation}
- * @<href>{https://help.github.com/articles/about-pull-request-reviews/, About pull request reviews - User Documentation}
- * @<href>{https://www49.atwiki.jp/aniwotawiki/pages/33338.html, 世界線(STEINS;GATE) - アニヲタWiki(仮) - アットウィキ}
- * @<href>{https://ja.wikipedia.org/wiki/STEINS;GATE%E3%81%AE%E7%94%A8%E8%AA%9E%E4%B8%80%E8%A6%A7, STEINS;GATEの用語一覧 - Wikipedia}
- * @<href>{http://amzn.to/2vExIAn, シュタインズ・ゲート 公式資料集}
- * @<href>{http://amzn.to/2uSxFTY, STEINS;GATE 0 公式資料集 Amadeus' Script}
+== Issues
+
+GitHubのイシューは円卓会議です。
+GitHubのイシューは現在のリポジトリにある問題点や改善したい点を皆で議論することができます。
+またソフトウェアの象徴となるロゴをどうするかなどの議論も時々おこなわれます。
+さながら岡部倫太郎たちが時間を遡って送れるメールをDメールと名付けた円卓会議に似ています。
+
+== Pages
+
+GitHubのページは未来ガジェット研究所のwebページです。
+リポジトリのmasterブランチ上に@<code>{docs}というディレクトリを作ってその中にHTMLを置くか、gh-pagesブランチ上にHTMLを置くことでwebページを公開できます。
+また未来ガジェット研究所のページ@<fn>{future-gadget-lab}みたいにドメインを自由に設定できます。
+//footnote[future-gadget-lab][http://futuregadget-lab.com/]
+
+== Wiki
+
+GitHubのウィキは未来ガジェット研究所に置かれたホワイトボードです。
+牧瀬紅莉栖がラボメンに対しタイムリープ理論を説明したときにホワイトボードを使いました。
+GitHubのWikiもそのリポジトリの説明ややることを書けます。
+
+== Projects
+
+GitHubのプロジェクトはオペレーションです。
+過去のコミットへさかのぼったまま戻れなくなった椎名まゆりと阿万音鈴羽にHEADのハッシュ値を渡し、可能ならばHEADに戻ってこさせるオペレーションがあります。
+そのオペレーションはオペレーション・アルタイルと岡部倫太郎が名付けました。GitHubのプロジェクトも一連の作業に対し名前を付けられます。
+
+== Pull Request
+
+GitHubのプルリクエストは岡部倫太郎以外がDメールやDラインを送る場合、岡部倫太郎に文言を見せる行為です。
+実際の例を出すと、桐生萌郁が「携帯の機種変に失敗したので前の携帯を使い続ける」旨のDメールを送ろうとしたとき、岡部倫太郎に見せてからDメールを送りました。
+これは作業内容をコミットしてプッシュした後、他のメンバーに変更点を伝えて何かあれば修正してからマージする流れと同じです。
+
+プルリクエストにはその変更が問題ないと承認する機能があります。また変更してほしい場合に変更をリクエストする機能もあります。
+Steins;Gateで桐生萌郁がDメールを送る直前に文言を差し替えたことは、変更が問題ないと承認されてから変更を加えたことになります。
+承認されていない変更なのでバグが起きる可能性もあります。実際にSteins;Gateでは世界線変動が起きて、岡部倫太郎の主観からは桐生萌郁が消えたように見えました。
+なので承認されたあとは何も変更を加えないようにするのが良いと言えます。
+
+Steins;Gate 0では@<kw>{盟誓のリナシメント}で自分自身にDラインを送ります。これは自分で自分へPull Requestすることになります。
+これをマージした結果、岡部倫太郎は2025年に過去の自分へ向けて「自分と世界を騙せ」とPull Requestする執念オカリンへつながります。
