@@ -31,7 +31,7 @@ epubmaker:
   htmlext: xhtml
   cover_linear: yes
 
-# texstyle: techbooster-doujin
+texstyle: techbooster-doujin
 texdocumentclass: ["jsbook", "b5j,uplatex,twoside,openany"]
 
 pdfmaker:
