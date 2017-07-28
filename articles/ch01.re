@@ -1,4 +1,4 @@
-= GitでSteins;Gateを解説する
+= GitでSteins;Gateを説明する
 
 Gitを使ってSteins;Gateの説明をする前にSteins;Gateの目的を書きます。
 

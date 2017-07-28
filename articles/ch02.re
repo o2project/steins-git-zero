@@ -1,4 +1,4 @@
-= GitHubでSteins;Gateを解説する
+= GitHubでSteins;Gateを説明する
 
 == Issues
 
