@@ -1,5 +1,13 @@
 = GitHubでSteins;Gateを説明する
 
+== Collaborators
+
+GitHubのコラボレーターはリポジトリに任意のGitHubユーザーを登録する機能です。
+追加された人はリポジトリへプッシュすることやさまざまなリポジトリの操作ができます。
+
+Steins;Gate 0では零化域のミッシングリンクで比屋定真帆が"Amadeus"のテスターとして岡部倫太郎を招待しました。
+これは"Amadeus"のリポジトリに岡部倫太郎がCollaboratorsとして追加されたといえます。
+
 == Issues
 
 GitHubのイシューは円卓会議です。
