@@ -1,5 +1,7 @@
 = GitHubでSteins;Gateを説明する
 
+GitHubの機能でSteins;Gateの説明をしていきます。
+
 == Collaborators
 
 GitHubのコラボレーターはリポジトリに任意のGitHubユーザーを登録する機能です。
