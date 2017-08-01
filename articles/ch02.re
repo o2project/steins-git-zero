@@ -1,6 +1,7 @@
 = GitHubでSteins;Gateを説明する
 
-GitHubの機能でSteins;Gateの説明をしていきます。
+前の章ではGitを使ってSteins;Gateの説明をしました。
+この章ではGitHubの機能でSteins;Gateの説明をしていきます。
 
 == Collaborators
 
